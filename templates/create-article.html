@@ -1,17 +1,17 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-Create Article
+Ստեղծել հոդված
 {% endblock %}
 
 {% block body %}
 <div class="container mt-5">
-    <h1>Create Article</h1>
+    <h1>Ստեղծել հոդված</h1>
     <form method="post">
-        <input type="text" name="title" id="title" class="form-control" placeholder="Title"><br>
-        <textarea name="intro" id="intro" class="form-control" placeholder="Intro"></textarea><br>
-        <textarea name="text" id="text" class="form-control" placeholder="Text"></textarea><br>
-        <input type="submit" class="btn btn-success" value="Send">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Վերնագիր"><br>
+        <textarea name="intro" id="intro" class="form-control" placeholder="Նկարագրություն"></textarea><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Հոդված"></textarea><br>
+        <input type="submit" class="btn btn-success" value="Ստեղծել">
     </form>
 </div>
 {% endblock %}

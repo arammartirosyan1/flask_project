@@ -1,24 +1,24 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-All Articles in sait
+Հոդվածներ
 {% endblock %}
 
 {% block body %}
 <div class="container mt-5">
-    <h1>All Articles in sait</h1>
+    <h1>Հոդվածներ</h1>
 
     {% if articles|length > 0 %}
         {% for el in articles %}
         <div class="alert alert-info">
             <h2>{{ el.title }}</h2>
             <p>{{ el.intro }}</p>
-            <p><b>Дата: {{ el.date.date() }}</b></p>
-            <a href="/posts/{{ el.id }}" class="btn btn-warning">More details</a>
+            <p><b>Ամսաթիվ: {{ el.date.date() }}</b></p>
+            <a href="/posts/{{ el.id }}" class="btn btn-warning">Ավելին</a>
         </div>
         {% endfor %}
     {% else %}
-    <p>У нас еще нет статей на сайте</p>
+    <p>Կայքում դեռևս հոդված չկա</p>
     {% endif %}
 </div>
 {% endblock %}
