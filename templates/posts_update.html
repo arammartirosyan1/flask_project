@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+
+{% endblock %}
+Հոդվածի թարամացում
+{% block body %}
+<div class="container mt-5">
+    <h1>Հոդվածի թարմացում</h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" value="{{ article.title }}" placeholder="Վերնագիր"><br>
+        <textarea name="intro" id="intro" class="form-control"  placeholder="Նկարագրություն">{{ article.intro}}</textarea><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Հոդված">{{ article.text }}</textarea><br>
+        <input type="submit" class="btn btn-success" value="Թարմացնել">
+    </form>
+</div>
+{% endblock %}
